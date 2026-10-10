@@ -1,0 +1,242 @@
+[
+    {
+        "record_id": "MR001",
+        "vehicle_id": "VH001",
+        "date": "2024-09-10",
+        "service_type": "oil_change",
+        "service_mode": "preventive",
+        "mileage_at_service": 18000,
+        "days_since_last_service": 120,
+        "sensor_readings_at_service": {
+            "engine_rpm": 820.0,
+            "lub_oil_pressure": 3.85,
+            "fuel_pressure": 5.60,
+            "coolant_pressure": 2.38,
+            "lub_oil_temp": 71.2,
+            "coolant_temp": 68.9
+        },
+        "components_serviced": ["engine_oil", "oil_filter"],
+        "anomalies_noted": [],
+        "notes": "Preventive oil change at 18K km. All sensor readings within normal range."
+    },
+    {
+        "record_id": "MR002",
+        "vehicle_id": "VH002",
+        "date": "2024-08-22",
+        "service_type": "fuel_system_service",
+        "service_mode": "reactive",
+        "mileage_at_service": 42000,
+        "days_since_last_service": 95,
+        "sensor_readings_at_service": {
+            "engine_rpm": 640.0,
+            "lub_oil_pressure": 2.53,
+            "fuel_pressure": 9.82,
+            "coolant_pressure": 2.70,
+            "lub_oil_temp": 74.1,
+            "coolant_temp": 77.4
+        },
+        "components_serviced": ["fuel_filter", "fuel_pressure_regulator"],
+        "anomalies_noted": [
+            {
+                "sensor": "fuel_pressure",
+                "recorded_value": 9.82,
+                "normal_range_high": 9.0,
+                "observation": "Fuel pressure above threshold; regulator suspected."
+            }
+        ],
+        "notes": "Reactive service after driver reported rough idle. Fuel pressure elevated. Filter and regulator replaced."
+    },
+    {
+        "record_id": "MR003",
+        "vehicle_id": "VH004",
+        "date": "2024-07-05",
+        "service_type": "oil_pressure_investigation",
+        "service_mode": "reactive",
+        "mileage_at_service": 31000,
+        "days_since_last_service": 85,
+        "sensor_readings_at_service": {
+            "engine_rpm": 382.0,
+            "lub_oil_pressure": 2.61,
+            "fuel_pressure": 4.68,
+            "coolant_pressure": 1.96,
+            "lub_oil_temp": 76.5,
+            "coolant_temp": 74.8
+        },
+        "components_serviced": ["engine_oil", "oil_filter", "oil_pump_inspection"],
+        "anomalies_noted": [
+            {
+                "sensor": "lub_oil_pressure",
+                "recorded_value": 2.61,
+                "normal_range_low": 2.5,
+                "observation": "Lubricating oil pressure near lower threshold. Oil pump wear suspected."
+            },
+            {
+                "sensor": "engine_rpm",
+                "recorded_value": 382.0,
+                "normal_range_low": 300.0,
+                "observation": "RPM low. Engine idle rough, possibly linked to oil pressure drop."
+            }
+        ],
+        "notes": "Reactive visit after warning lamp. Lub oil pressure borderline low. Pump inspected — early wear found. Oil and filter changed."
+    },
+    {
+        "record_id": "MR004",
+        "vehicle_id": "VH006",
+        "date": "2024-09-05",
+        "service_type": "coolant_system_service",
+        "service_mode": "reactive",
+        "mileage_at_service": 90000,
+        "days_since_last_service": 180,
+        "sensor_readings_at_service": {
+            "engine_rpm": 490.0,
+            "lub_oil_pressure": 2.72,
+            "fuel_pressure": 4.95,
+            "coolant_pressure": 1.89,
+            "lub_oil_temp": 77.0,
+            "coolant_temp": 80.1
+        },
+        "components_serviced": ["coolant_flush", "coolant_hose_inspection", "thermostat"],
+        "anomalies_noted": [
+            {
+                "sensor": "coolant_temp",
+                "recorded_value": 80.1,
+                "normal_range_high": 85.0,
+                "observation": "Coolant temperature approaching upper limit. Thermostat sluggish."
+            },
+            {
+                "sensor": "coolant_pressure",
+                "recorded_value": 1.89,
+                "normal_range_low": 1.5,
+                "observation": "Coolant pressure below comfortable margin, possible slow leak."
+            }
+        ],
+        "notes": "Customer reported occasional high temp gauge. Coolant system flushed, thermostat replaced, hoses inspected."
+    },
+    {
+        "record_id": "MR005",
+        "vehicle_id": "VH003",
+        "date": "2024-07-18",
+        "service_type": "scheduled_oil_change",
+        "service_mode": "preventive",
+        "mileage_at_service": 15000,
+        "days_since_last_service": 90,
+        "sensor_readings_at_service": {
+            "engine_rpm": 816.0,
+            "lub_oil_pressure": 4.02,
+            "fuel_pressure": 5.21,
+            "coolant_pressure": 1.88,
+            "lub_oil_temp": 80.4,
+            "coolant_temp": 75.6
+        },
+        "components_serviced": ["engine_oil", "oil_filter"],
+        "anomalies_noted": [],
+        "notes": "15K km routine service. All sensor readings nominal. Vehicle in good health."
+    },
+    {
+        "record_id": "MR006",
+        "vehicle_id": "VH007",
+        "date": "2024-10-20",
+        "service_type": "oil_pressure_service",
+        "service_mode": "reactive",
+        "mileage_at_service": 28000,
+        "days_since_last_service": 110,
+        "sensor_readings_at_service": {
+            "engine_rpm": 590.0,
+            "lub_oil_pressure": 1.98,
+            "fuel_pressure": 7.08,
+            "coolant_pressure": 2.58,
+            "lub_oil_temp": 74.9,
+            "coolant_temp": 75.5
+        },
+        "components_serviced": ["engine_oil", "oil_filter", "oil_pump"],
+        "anomalies_noted": [
+            {
+                "sensor": "lub_oil_pressure",
+                "recorded_value": 1.98,
+                "normal_range_low": 2.5,
+                "observation": "Lub oil pressure significantly below threshold. Oil pump replaced."
+            }
+        ],
+        "notes": "Oil pressure warning triggered. Pump showing significant wear. Pump and oil/filter replaced. Pressure restored post-service."
+    },
+    {
+        "record_id": "MR007",
+        "vehicle_id": "VH008",
+        "date": "2024-06-15",
+        "service_type": "scheduled_oil_change",
+        "service_mode": "preventive",
+        "mileage_at_service": 22000,
+        "days_since_last_service": 100,
+        "sensor_readings_at_service": {
+            "engine_rpm": 638.0,
+            "lub_oil_pressure": 3.87,
+            "fuel_pressure": 6.55,
+            "coolant_pressure": 1.92,
+            "lub_oil_temp": 76.8,
+            "coolant_temp": 64.2
+        },
+        "components_serviced": ["engine_oil", "oil_filter", "air_filter"],
+        "anomalies_noted": [],
+        "notes": "Routine 22K service. All parameters normal. Fuel pressure slightly elevated but within range."
+    },
+    {
+        "record_id": "MR008",
+        "vehicle_id": "VH009",
+        "date": "2024-08-30",
+        "service_type": "scheduled_oil_change",
+        "service_mode": "preventive",
+        "mileage_at_service": 48000,
+        "days_since_last_service": 130,
+        "sensor_readings_at_service": {
+            "engine_rpm": 1038.0,
+            "lub_oil_pressure": 4.48,
+            "fuel_pressure": 6.18,
+            "coolant_pressure": 3.15,
+            "lub_oil_temp": 78.8,
+            "coolant_temp": 70.5
+        },
+        "components_serviced": ["engine_oil", "oil_filter"],
+        "anomalies_noted": [],
+        "notes": "48K preventive service. All 6 sensor readings nominal. No faults flagged."
+    },
+    {
+        "record_id": "MR009",
+        "vehicle_id": "VH005",
+        "date": "2024-05-12",
+        "service_type": "fuel_filter_replacement",
+        "service_mode": "preventive",
+        "mileage_at_service": 33000,
+        "days_since_last_service": 150,
+        "sensor_readings_at_service": {
+            "engine_rpm": 862.0,
+            "lub_oil_pressure": 2.65,
+            "fuel_pressure": 5.18,
+            "coolant_pressure": 1.91,
+            "lub_oil_temp": 77.8,
+            "coolant_temp": 70.9
+        },
+        "components_serviced": ["fuel_filter"],
+        "anomalies_noted": [],
+        "notes": "Scheduled fuel filter replacement at 33K. Lub oil pressure near lower end — noted for monitoring."
+    },
+    {
+        "record_id": "MR010",
+        "vehicle_id": "VH010",
+        "date": "2024-10-01",
+        "service_type": "scheduled_oil_change",
+        "service_mode": "preventive",
+        "mileage_at_service": 55000,
+        "days_since_last_service": 115,
+        "sensor_readings_at_service": {
+            "engine_rpm": 1420.0,
+            "lub_oil_pressure": 2.82,
+            "fuel_pressure": 4.38,
+            "coolant_pressure": 2.18,
+            "lub_oil_temp": 74.6,
+            "coolant_temp": 77.3
+        },
+        "components_serviced": ["engine_oil", "oil_filter"],
+        "anomalies_noted": [],
+        "notes": "55K routine service. All readings stable. No anomalies recorded."
+    }
+]

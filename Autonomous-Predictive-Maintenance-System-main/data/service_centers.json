@@ -1,0 +1,256 @@
+[
+    {
+        "service_center_id": "SC001",
+        "name": "AutoCare Mumbai Central",
+        "city": "Mumbai",
+        "address": "123 Industrial Estate, Andheri East, Mumbai 400069",
+        "phone": "+91-22-12345678",
+        "capacity_per_day": 25,
+        "working_hours": {
+            "open": "08:00",
+            "close": "20:00"
+        },
+        "technicians": [
+            "TECH001",
+            "TECH004",
+            "TECH008"
+        ],
+        "available_slots": [
+            {
+                "slot_id": "SL001",
+                "date": "2024-12-16",
+                "time": "09:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL002",
+                "date": "2024-12-16",
+                "time": "11:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL003",
+                "date": "2024-12-16",
+                "time": "14:00",
+                "available": false
+            },
+            {
+                "slot_id": "SL004",
+                "date": "2024-12-17",
+                "time": "09:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL005",
+                "date": "2024-12-17",
+                "time": "10:00",
+                "available": true
+            }
+        ],
+        "parts_inventory": {
+            "engine_oil_5w30": 50,
+            "oil_filter": 30,
+            "air_filter": 25,
+            "brake_pads_front": 15,
+            "brake_pads_rear": 12,
+            "battery_12v": 8,
+            "coolant_1l": 40
+        }
+    },
+    {
+        "service_center_id": "SC002",
+        "name": "QuickFix Bangalore",
+        "city": "Bangalore",
+        "address": "45 Tech Park Road, Whitefield, Bangalore 560066",
+        "phone": "+91-80-23456789",
+        "capacity_per_day": 30,
+        "working_hours": {
+            "open": "07:30",
+            "close": "21:00"
+        },
+        "technicians": [
+            "TECH002",
+            "TECH003",
+            "TECH009",
+            "TECH010"
+        ],
+        "available_slots": [
+            {
+                "slot_id": "SL006",
+                "date": "2024-12-15",
+                "time": "08:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL007",
+                "date": "2024-12-15",
+                "time": "10:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL008",
+                "date": "2024-12-15",
+                "time": "15:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL009",
+                "date": "2024-12-16",
+                "time": "09:00",
+                "available": true
+            }
+        ],
+        "parts_inventory": {
+            "engine_oil_5w30": 60,
+            "oil_filter": 40,
+            "air_filter": 35,
+            "brake_pads_front": 20,
+            "brake_pads_rear": 18,
+            "battery_12v": 12,
+            "coolant_1l": 50
+        }
+    },
+    {
+        "service_center_id": "SC003",
+        "name": "DriveWell Chennai",
+        "city": "Chennai",
+        "address": "78 Anna Salai, Guindy, Chennai 600032",
+        "phone": "+91-44-34567890",
+        "capacity_per_day": 20,
+        "working_hours": {
+            "open": "08:00",
+            "close": "19:00"
+        },
+        "technicians": [
+            "TECH005",
+            "TECH011"
+        ],
+        "available_slots": [
+            {
+                "slot_id": "SL010",
+                "date": "2024-12-16",
+                "time": "09:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL011",
+                "date": "2024-12-16",
+                "time": "12:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL012",
+                "date": "2024-12-17",
+                "time": "10:00",
+                "available": true
+            }
+        ],
+        "parts_inventory": {
+            "engine_oil_5w30": 35,
+            "oil_filter": 25,
+            "air_filter": 20,
+            "brake_pads_front": 10,
+            "brake_pads_rear": 8,
+            "battery_12v": 5,
+            "coolant_1l": 30
+        }
+    },
+    {
+        "service_center_id": "SC004",
+        "name": "AutoExpert Punjab",
+        "city": "Chandigarh",
+        "address": "56 Industrial Area Phase I, Chandigarh 160002",
+        "phone": "+91-172-4567890",
+        "capacity_per_day": 18,
+        "working_hours": {
+            "open": "09:00",
+            "close": "18:00"
+        },
+        "technicians": [
+            "TECH006",
+            "TECH012"
+        ],
+        "available_slots": [
+            {
+                "slot_id": "SL013",
+                "date": "2024-12-15",
+                "time": "09:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL014",
+                "date": "2024-12-15",
+                "time": "11:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL015",
+                "date": "2024-12-16",
+                "time": "14:00",
+                "available": true
+            }
+        ],
+        "parts_inventory": {
+            "engine_oil_5w30": 30,
+            "oil_filter": 20,
+            "air_filter": 18,
+            "brake_pads_front": 8,
+            "brake_pads_rear": 6,
+            "battery_12v": 4,
+            "coolant_1l": 25
+        }
+    },
+    {
+        "service_center_id": "SC005",
+        "name": "CarCare Delhi",
+        "city": "Delhi",
+        "address": "23 Okhla Industrial Estate, New Delhi 110020",
+        "phone": "+91-11-56789012",
+        "capacity_per_day": 35,
+        "working_hours": {
+            "open": "07:00",
+            "close": "22:00"
+        },
+        "technicians": [
+            "TECH007",
+            "TECH013",
+            "TECH014",
+            "TECH015"
+        ],
+        "available_slots": [
+            {
+                "slot_id": "SL016",
+                "date": "2024-12-14",
+                "time": "14:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL017",
+                "date": "2024-12-14",
+                "time": "16:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL018",
+                "date": "2024-12-15",
+                "time": "08:00",
+                "available": true
+            },
+            {
+                "slot_id": "SL019",
+                "date": "2024-12-15",
+                "time": "10:00",
+                "available": true
+            }
+        ],
+        "parts_inventory": {
+            "engine_oil_5w30": 80,
+            "oil_filter": 50,
+            "air_filter": 45,
+            "brake_pads_front": 25,
+            "brake_pads_rear": 22,
+            "battery_12v": 15,
+            "coolant_1l": 60
+        }
+    }
+]

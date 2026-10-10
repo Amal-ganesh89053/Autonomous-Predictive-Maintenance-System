@@ -1,0 +1,92 @@
+{
+    "VH001": {
+        "engine_rpm": 856.0,
+        "lub_oil_pressure": 4.043840291,
+        "fuel_pressure": 5.829365965,
+        "coolant_pressure": 2.460446462,
+        "lub_oil_temp": 73.86013251,
+        "coolant_temp": 71.04707802,    
+        "label": 1
+    },
+    "VH002": {
+        "engine_rpm": 634.0,
+        "lub_oil_pressure": 2.611259749,
+        "fuel_pressure": 10.45351674,
+        "coolant_pressure": 2.771041203,
+        "lub_oil_temp": 75.86364036,
+        "coolant_temp": 79.24583418,
+        "label": 1
+    },
+    "VH003": {
+        "engine_rpm": 814.0,
+        "lub_oil_pressure": 4.073485693,
+        "fuel_pressure": 5.257120244,
+        "coolant_pressure": 1.866570541,
+        "lub_oil_temp": 81.84006988,
+        "coolant_temp": 76.71559076,
+        "label": 0
+    },
+    "VH004": {
+        "engine_rpm": 379.0,
+        "lub_oil_pressure": 2.724638884,
+        "fuel_pressure": 4.712955443,
+        "coolant_pressure": 1.981593448,
+        "lub_oil_temp": 77.09225987,
+        "coolant_temp": 76.10672686,
+        "label": 1
+    },
+    "VH005": {
+        "engine_rpm": 868.0,
+        "lub_oil_pressure": 2.672808765,
+        "fuel_pressure": 5.273916775,
+        "coolant_pressure": 1.905387341,
+        "lub_oil_temp": 78.47547761,
+        "coolant_temp": 72.08836147,
+        "label": 0
+    },
+    "VH006": {
+        "engine_rpm": 486.0,
+        "lub_oil_pressure": 2.751187001,
+        "fuel_pressure": 4.981188754,
+        "coolant_pressure": 1.947335262,
+        "lub_oil_temp": 77.91508409,
+        "coolant_temp": 82.36621303,
+        "label": 1
+    },
+    "VH007": {
+        "engine_rpm": 584.0,
+        "lub_oil_pressure": 2.017893075,
+        "fuel_pressure": 7.132055281,
+        "coolant_pressure": 2.591517898,
+        "lub_oil_temp": 75.53013166,
+        "coolant_temp": 76.8925718,
+        "label": 1
+    },
+    "VH008": {
+        "engine_rpm": 642.0,
+        "lub_oil_pressure": 3.958400328,
+        "fuel_pressure": 6.737428768,
+        "coolant_pressure": 1.969272644,
+        "lub_oil_temp": 77.92503429,
+        "coolant_temp": 66.41588797,
+        "label": 1
+    },
+    "VH009": {
+        "engine_rpm": 1041.0,
+        "lub_oil_pressure": 4.521052604,
+        "fuel_pressure": 6.210473426,
+        "coolant_pressure": 3.187333879,
+        "lub_oil_temp": 79.19700639,
+        "coolant_temp": 71.81744631,
+        "label": 0
+    },
+    "VH010": {
+        "engine_rpm": 1427.0,
+        "lub_oil_pressure": 2.843244761,
+        "fuel_pressure": 4.407384451,
+        "coolant_pressure": 2.191825573,
+        "lub_oil_temp": 75.03197709,
+        "coolant_temp": 78.14429599,
+        "label": 0
+    }
+}

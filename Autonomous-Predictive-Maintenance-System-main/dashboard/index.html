@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPilot Maintenance | Predictive Vehicle Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">🚗</div>
+                <span class="logo-text">AutoPilot</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <div class="nav-section">
+                    <span class="nav-section-title">Dashboard</span>
+                    <a href="#" class="nav-item active" data-view="owner">
+                        <span class="nav-icon">👤</span>
+                        <span>Owner View</span>
+                    </a>
+                    <a href="#" class="nav-item" data-view="service-center">
+                        <span class="nav-icon">🔧</span>
+                        <span>Service Center</span>
+                    </a>
+                    <a href="#" class="nav-item" data-view="manufacturer">
+                        <span class="nav-icon">🏭</span>
+                        <span>Manufacturer</span>
+                    </a>
+                </div>
+                
+                <div class="nav-section">
+                    <span class="nav-section-title">Analysis</span>
+                    <a href="#" class="nav-item" data-view="fleet">
+                        <span class="nav-icon">📊</span>
+                        <span>Fleet Status</span>
+                    </a>
+                    <a href="#" class="nav-item" data-view="agent-logs">
+                        <span class="nav-icon">🤖</span>
+                        <span>Agent Activity</span>
+                    </a>
+                </div>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <div class="security-status">
+                    <span class="security-indicator online"></span>
+                    <span>UEBA Active</span>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <h1 id="page-title">Vehicle Owner Dashboard</h1>
+                    <p id="page-subtitle">Monitor your vehicle's health and maintenance</p>
+                </div>
+                <div class="header-right">
+                    <div class="search-box">
+                        <input type="text" id="vehicle-search" placeholder="Search vehicle ID...">
+                    </div>
+                    <div class="user-profile">
+                        <span class="user-avatar">RS</span>
+                        <span class="user-name">Rajesh Sharma</span>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Owner View -->
+            <section id="owner-view" class="view-section active">
+                <!-- Vehicle Health Overview -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon engine">🔥</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Engine Health</span>
+                            <span class="stat-value good">92%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon battery">🔋</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Battery Status</span>
+                            <span class="stat-value good">95%</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon brakes">🛞</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Brake Pads</span>
+                            <span class="stat-value warning">30% left</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon service">📅</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Next Service</span>
+                            <span class="stat-value">Dec 20</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Alerts Section -->
+                <div class="section-card alerts-section">
+                    <div class="section-header">
+                        <h2>Active Alerts</h2>
+                        <span class="badge warning">2 Pending</span>
+                    </div>
+                    <div class="alerts-list">
+                        <div class="alert-item warning">
+                            <div class="alert-icon">⚠️</div>
+                            <div class="alert-content">
+                                <h4>Brake Pad Wear Detected</h4>
+                                <p>Front brake pads at 30% - recommend replacement within 2 weeks</p>
+                                <span class="alert-time">Detected 2 hours ago</span>
+                            </div>
+                            <button class="btn btn-primary">Schedule Service</button>
+                        </div>
+                        <div class="alert-item info">
+                            <div class="alert-icon">ℹ️</div>
+                            <div class="alert-content">
+                                <h4>Upcoming Service Due</h4>
+                                <p>25,000 km service due in 500 km - oil change and filter replacement</p>
+                                <span class="alert-time">Based on mileage</span>
+                            </div>
+                            <button class="btn btn-secondary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Vehicle Telemetry -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2>Real-time Telemetry</h2>
+                        <span class="refresh-time">Last updated: Just now</span>
+                    </div>
+                    <div class="telemetry-grid">
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">Engine Temp</span>
+                            <span class="telemetry-value">92°C</span>
+                            <div class="telemetry-bar">
+                                <div class="telemetry-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">Oil Pressure</span>
+                            <span class="telemetry-value">35 PSI</span>
+                            <div class="telemetry-bar">
+                                <div class="telemetry-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">Coolant Level</span>
+                            <span class="telemetry-value">90%</span>
+                            <div class="telemetry-bar">
+                                <div class="telemetry-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">Tyre Pressure</span>
+                            <span class="telemetry-value">32 PSI</span>
+                            <div class="telemetry-bar">
+                                <div class="telemetry-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service History -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2>Service History</h2>
+                        <a href="#" class="view-all">View All</a>
+                    </div>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Service Type</th>
+                                <th>Components</th>
+                                <th>Cost</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Jun 15, 2024</td>
+                                <td>Scheduled Maintenance</td>
+                                <td>Oil, Filters</td>
+                                <td>₹5,500</td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Jan 10, 2024</td>
+                                <td>Repair</td>
+                                <td>Battery Replacement</td>
+                                <td>₹8,500</td>
+                                <td><span class="status-badge completed">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+            <!-- Service Center View -->
+            <section id="service-center-view" class="view-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📅</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Today's Appointments</span>
+                            <span class="stat-value">12</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🔔</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Pending Predictions</span>
+                            <span class="stat-value warning">5</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👨‍🔧</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Available Technicians</span>
+                            <span class="stat-value">4</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Parts Alerts</span>
+                            <span class="stat-value critical">2</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Upcoming Bookings -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2>Upcoming Predictive Bookings</h2>
+                        <span class="badge info">Predicted by AI</span>
+                    </div>
+                    <div class="booking-cards">
+                        <div class="booking-card">
+                            <div class="booking-header">
+                                <span class="vehicle-info">
+                                    <strong>VH002</strong> - Mahindra XUV700
+                                </span>
+                                <span class="priority-badge high">HIGH PRIORITY</span>
+                            </div>
+                            <div class="booking-body">
+                                <p><strong>Predicted Issue:</strong> Coolant system leak, brake pad wear</p>
+                                <p><strong>Owner:</strong> Priya Patel (Bangalore)</p>
+                                <p><strong>Recommended Slot:</strong> Dec 15, 9:00 AM</p>
+                            </div>
+                            <div class="booking-footer">
+                                <span class="parts-status ready">Parts Ready</span>
+                                <button class="btn btn-primary">Confirm Booking</button>
+                            </div>
+                        </div>
+                        <div class="booking-card">
+                            <div class="booking-header">
+                                <span class="vehicle-info">
+                                    <strong>VH006</strong> - Toyota Innova
+                                </span>
+                                <span class="priority-badge critical">CRITICAL</span>
+                            </div>
+                            <div class="booking-body">
+                                <p><strong>Predicted Issue:</strong> Engine overheating, coolant critical</p>
+                                <p><strong>Owner:</strong> Gurpreet Kaur (Chandigarh)</p>
+                                <p><strong>Status:</strong> Customer contacted via voice</p>
+                            </div>
+                            <div class="booking-footer">
+                                <span class="parts-status pending">Parts Reserved</span>
+                                <button class="btn btn-danger">Emergency Slot</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Technician Workload -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2>Technician Assignments</h2>
+                    </div>
+                    <div class="technician-grid">
+                        <div class="technician-card">
+                            <div class="tech-avatar">RK</div>
+                            <div class="tech-info">
+                                <h4>Rajiv Kumar</h4>
+                                <p>Engine, Transmission</p>
+                                <span class="workload-bar"><span style="width: 60%"></span></span>
+                            </div>
+                            <span class="tech-rating">⭐ 4.8</span>
+                        </div>
+                        <div class="technician-card">
+                            <div class="tech-avatar">AS</div>
+                            <div class="tech-info">
+                                <h4>Anil Sharma</h4>
+                                <p>Brakes, Suspension</p>
+                                <span class="workload-bar"><span style="width: 80%"></span></span>
+                            </div>
+                            <span class="tech-rating">⭐ 4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Manufacturer View -->
+            <section id="manufacturer-view" class="view-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Active CAPA Records</span>
+                            <span class="stat-value">7</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🔴</div>
+                        <div class="stat-content">
+                            <span class="stat-label">High Severity</span>
+                            <span class="stat-value critical">3</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Resolved This Month</span>
+                            <span class="stat-value good">12</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-content">
+                            <span class="stat-label">Prediction Accuracy</span>
+                            <span class="stat-value">87%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CAPA Insights -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2>RCA/CAPA Insights from Field</h2>
+                        <span class="badge">AI Generated</span>
+                    </div>
+                    <div class="capa-list">
+                        <div class="capa-item high">
+                            <div class="capa-header">
+                                <span class="capa-id">CAPA003</span>
+                                <span class="severity-badge high">HIGH</span>
+                            </div>
+                            <h4>Brake Pad Excessive Wear - XUV700, Scorpio-N</h4>
+                            <p><strong>Root Cause:</strong> Brake pad compound formula issue causing accelerated wear in city driving conditions</p>
+                            <p><strong>Affected:</strong> 287 vehicles | Production: 2022-2023</p>
+                            <div class="capa-actions">
+                                <div class="action-box corrective">
+                                    <h5>Corrective Action</h5>
+                                    <p>Replace with updated brake pad compound BP-2024-A</p>
+                                </div>
+                                <div class="action-box preventive">
+                                    <h5>Preventive Action</h5>
+                                    <p>New brake pad validation includes extended city driving test cycle</p>
+                                </div>
+                            </div>
+                            <span class="capa-status">Status: Implemented</span>
+                        </div>
+                        
+                        <div class="capa-item medium">
+                            <div class="capa-header">
+                                <span class="capa-id">CAPA002</span>
+                                <span class="severity-badge medium">MEDIUM</span>
+                            </div>
+                            <h4>Battery Premature Degradation - Creta, Venue</h4>
+                            <p><strong>Root Cause:</strong> Battery cells from supplier X showing early capacity loss in high-temperature regions</p>
+                            <p><strong>Affected:</strong> 423 vehicles | Production: 2021-2022</p>
+                            <div class="capa-actions">
+                                <div class="action-box corrective">
+                                    <h5>Corrective Action</h5>
+                                    <p>Proactive battery replacement for affected vehicles in warranty</p>
+                                </div>
+                                <div class="action-box preventive">
+                                    <h5>Manufacturing Feedback</h5>
+                                    <p>Design team evaluating enhanced thermal management for battery compartment</p>
+                                </div>
+                            </div>
+                            <span class="capa-status monitoring">Status: Monitoring</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Defect Trends -->
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2>Component Failure Trends</h2>
+                    </div>
+                    <div class="trends-chart">
+                        <div class="trend-item">
+                            <span class="trend-label">Brake System</span>
+                            <div class="trend-bar"><span style="width: 35%"></span></div>
+                            <span class="trend-value">35%</span>
+                        </div>
+                        <div class="trend-item">
+                            <span class="trend-label">Battery</span>
+                            <div class="trend-bar"><span style="width: 25%"></span></div>
+                            <span class="trend-value">25%</span>
+                        </div>
+                        <div class="trend-item">
+                            <span class="trend-label">Cooling System</span>
+                            <div class="trend-bar"><span style="width: 20%"></span></div>
+                            <span class="trend-value">20%</span>
+                        </div>
+                        <div class="trend-item">
+                            <span class="trend-label">Suspension</span>
+                            <div class="trend-bar"><span style="width: 12%"></span></div>
+                            <span class="trend-value">12%</span>
+                        </div>
+                        <div class="trend-item">
+                            <span class="trend-label">Other</span>
+                            <div class="trend-bar"><span style="width: 8%"></span></div>
+                            <span class="trend-value">8%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Fleet Status View -->
+            <section id="fleet-view" class="view-section">
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2>Fleet Health Overview</h2>
+                    </div>
+                    <div class="fleet-status-grid" id="fleet-grid">
+                        <!-- Populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Agent Activity View -->
+            <section id="agent-logs-view" class="view-section">
+                <div class="section-card">
+                    <div class="section-header">
+                        <h2>Agent Activity Log</h2>
+                        <span class="badge">UEBA Monitored</span>
+                    </div>
+                    <div class="agent-logs" id="agent-activity-log">
+                        <div class="log-entry">
+                            <span class="log-time">12:05:32</span>
+                            <span class="log-agent">data_analysis_agent</span>
+                            <span class="log-action">Analyzed telemetry for VH002</span>
+                            <span class="log-status safe">✓ Normal</span>
+                        </div>
+                        <div class="log-entry">
+                            <span class="log-time">12:05:35</span>
+                            <span class="log-agent">diagnosis_agent</span>
+                            <span class="log-action">Predicted brake pad wear for VH002</span>
+                            <span class="log-status safe">✓ Normal</span>
+                        </div>
+                        <div class="log-entry">
+                            <span class="log-time">12:05:40</span>
+                            <span class="log-agent">customer_outreach_agent</span>
+                            <span class="log-action">Initiated voice contact with owner</span>
+                            <span class="log-status safe">✓ Normal</span>
+                        </div>
+                        <div class="log-entry alert">
+                            <span class="log-time">12:06:15</span>
+                            <span class="log-agent">scheduling_agent</span>
+                            <span class="log-action">Attempted to access telemetry data</span>
+                            <span class="log-status warning">⚠ Flagged</span>
+                        </div>
+                        <div class="log-entry">
+                            <span class="log-time">12:06:20</span>
+                            <span class="log-agent">ueba_security_agent</span>
+                            <span class="log-action">Logged anomalous behavior - scheduling_agent</span>
+                            <span class="log-status info">ℹ Monitored</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

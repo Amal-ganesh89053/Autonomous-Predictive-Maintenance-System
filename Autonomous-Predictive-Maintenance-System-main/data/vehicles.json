@@ -1,0 +1,172 @@
+[
+    {
+        "vehicle_id": "VH001",
+        "make": "Tata",
+        "model": "Nexon EV",
+        "year": 2023,
+        "vin": "TATANEXON2023001",
+        "registration": "MH12AB1234",
+        "mileage_km": 25000,
+        "owner": {
+            "owner_id": "OW001",
+            "name": "Rajesh Sharma",
+            "phone": "+91-9876543210",
+            "email": "rajesh.sharma@email.com",
+            "city": "Mumbai",
+            "preferred_contact": "voice"
+        }
+    },
+    {
+        "vehicle_id": "VH002",
+        "make": "Mahindra",
+        "model": "XUV700",
+        "year": 2022,
+        "vin": "MAHXUV7002022001",
+        "registration": "KA01CD5678",
+        "mileage_km": 45000,
+        "owner": {
+            "owner_id": "OW002",
+            "name": "Priya Patel",
+            "phone": "+91-9876543211",
+            "email": "priya.patel@email.com",
+            "city": "Bangalore",
+            "preferred_contact": "app"
+        }
+    },
+    {
+        "vehicle_id": "VH003",
+        "make": "Maruti Suzuki",
+        "model": "Grand Vitara",
+        "year": 2023,
+        "vin": "MSZVITARA2023001",
+        "registration": "DL10EF9012",
+        "mileage_km": 18000,
+        "owner": {
+            "owner_id": "OW003",
+            "name": "Amit Kumar",
+            "phone": "+91-9876543212",
+            "email": "amit.kumar@email.com",
+            "city": "Delhi",
+            "preferred_contact": "voice"
+        }
+    },
+    {
+        "vehicle_id": "VH004",
+        "make": "Hyundai",
+        "model": "Creta",
+        "year": 2021,
+        "vin": "HYNCRETA2021001",
+        "registration": "TN01GH3456",
+        "mileage_km": 62000,
+        "owner": {
+            "owner_id": "OW004",
+            "name": "Sunita Reddy",
+            "phone": "+91-9876543213",
+            "email": "sunita.reddy@email.com",
+            "city": "Chennai",
+            "preferred_contact": "voice"
+        }
+    },
+    {
+        "vehicle_id": "VH005",
+        "make": "Kia",
+        "model": "Seltos",
+        "year": 2022,
+        "vin": "KIASELTOS2022001",
+        "registration": "GJ01IJ7890",
+        "mileage_km": 38000,
+        "owner": {
+            "owner_id": "OW005",
+            "name": "Vikram Singh",
+            "phone": "+91-9876543214",
+            "email": "vikram.singh@email.com",
+            "city": "Ahmedabad",
+            "preferred_contact": "app"
+        }
+    },
+    {
+        "vehicle_id": "VH006",
+        "make": "Toyota",
+        "model": "Innova Crysta",
+        "year": 2020,
+        "vin": "TOYINNOVA2020001",
+        "registration": "PB02KL1234",
+        "mileage_km": 95000,
+        "owner": {
+            "owner_id": "OW006",
+            "name": "Gurpreet Kaur",
+            "phone": "+91-9876543215",
+            "email": "gurpreet.kaur@email.com",
+            "city": "Chandigarh",
+            "preferred_contact": "voice"
+        }
+    },
+    {
+        "vehicle_id": "VH007",
+        "make": "Honda",
+        "model": "City",
+        "year": 2023,
+        "vin": "HONCITY2023001",
+        "registration": "RJ14MN5678",
+        "mileage_km": 12000,
+        "owner": {
+            "owner_id": "OW007",
+            "name": "Neha Agarwal",
+            "phone": "+91-9876543216",
+            "email": "neha.agarwal@email.com",
+            "city": "Jaipur",
+            "preferred_contact": "app"
+        }
+    },
+    {
+        "vehicle_id": "VH008",
+        "make": "Skoda",
+        "model": "Kushaq",
+        "year": 2022,
+        "vin": "SKOKUSHA2022001",
+        "registration": "UP16OP9012",
+        "mileage_km": 28000,
+        "owner": {
+            "owner_id": "OW008",
+            "name": "Rahul Verma",
+            "phone": "+91-9876543217",
+            "email": "rahul.verma@email.com",
+            "city": "Lucknow",
+            "preferred_contact": "voice"
+        }
+    },
+    {
+        "vehicle_id": "VH009",
+        "make": "MG",
+        "model": "Hector",
+        "year": 2021,
+        "vin": "MGHECTOR2021001",
+        "registration": "WB20QR3456",
+        "mileage_km": 55000,
+        "owner": {
+            "owner_id": "OW009",
+            "name": "Sanjay Das",
+            "phone": "+91-9876543218",
+            "email": "sanjay.das@email.com",
+            "city": "Kolkata",
+            "preferred_contact": "voice"
+        }
+    },
+    {
+        "vehicle_id": "VH010",
+        "make": "Volkswagen",
+        "model": "Taigun",
+        "year": 2023,
+        "vin": "VWTAIGUN2023001",
+        "registration": "AP09ST7890",
+        "mileage_km": 8000,
+        "owner": {
+            "owner_id": "OW010",
+            "name": "Lakshmi Rao",
+            "phone": "+91-9876543219",
+            "email": "lakshmi.rao@email.com",
+            "city": "Hyderabad",
+            "preferred_contact": "app"
+        }
+    }
+]
